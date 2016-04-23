@@ -15,21 +15,17 @@ public class Beanmachine extends Application {
 	private double[] Y = {50,99,129,159,189,219,249,279,290,360};
 	private ArrayList<double[]> X = new ArrayList<>();
 	private ArrayList<Polyline> ballpath = new ArrayList<>();
-    Pane pane = new Pane();
+    //Create a Pane
+	Pane pane = new Pane();
 
   @Override // Override the start method in the Application class
   public void start(Stage primaryStage) {
-    //pane.getChildren().add(new Button("OK")); 
-	//Create a Pane
-
-
 	//Create a Polyline
 	Polyline polyline = new Polyline();
 	for(int i = 0;i <=500;i++){
 		X.add(new double[10]);
 		(X.get(i))[0] = 230;
 		(X.get(i))[1] = 230;
-		
 	}
 	
 	polyline.getPoints().addAll(210d,50d,210d,90d,110d,300d,110d,360d,350d,360d,350d,300d,250d,90d,250d,50d);
@@ -51,122 +47,34 @@ public class Beanmachine extends Application {
 	pane.getChildren().add(line6);
 	pane.getChildren().add(line7);
 	//Create many circles
-	Circle circle1 = new Circle();
-	Circle circle2 = new Circle();
-	Circle circle3 = new Circle();
-	Circle circle4 = new Circle();
-	Circle circle5 = new Circle();
-	Circle circle6 = new Circle();
-	Circle circle7 = new Circle();
-	Circle circle8 = new Circle();
-	Circle circle9 = new Circle();
-	Circle circle10 = new Circle();
-	Circle circle11 = new Circle();
-	Circle circle12 = new Circle();
-	Circle circle13 = new Circle();
-	Circle circle14 = new Circle();
-	Circle circle15 = new Circle();
-	Circle circle16 = new Circle();
-	Circle circle17 = new Circle();
-	Circle circle18 = new Circle();
-	Circle circle19 = new Circle();
-	Circle circle20 = new Circle();
-	Circle circle21 = new Circle();
-	Circle circle22 = new Circle();
-	Circle circle23 = new Circle();
-	Circle circle24 = new Circle();
-	Circle circle25 = new Circle();
-	Circle circle26 = new Circle();
-	Circle circle27 = new Circle();
-	Circle circle28 = new Circle();
-	
-	//Set circles' radius
-	circle1.setRadius(5);
-	circle2.setRadius(5);
-	circle3.setRadius(5);
-	circle4.setRadius(5);
-	circle5.setRadius(5);
-	circle6.setRadius(5);
-	circle7.setRadius(5);
-	circle8.setRadius(5);
-	circle9.setRadius(5);
-	circle10.setRadius(5);
-	circle11.setRadius(5);
-	circle12.setRadius(5);
-	circle13.setRadius(5);
-	circle14.setRadius(5);
-	circle15.setRadius(5);
-	circle16.setRadius(5);
-	circle17.setRadius(5);
-	circle18.setRadius(5);
-	circle19.setRadius(5);
-	circle20.setRadius(5);
-	circle21.setRadius(5);
-	circle22.setRadius(5);
-	circle23.setRadius(5);
-	circle24.setRadius(5);
-	circle25.setRadius(5);
-	circle26.setRadius(5);
-	circle27.setRadius(5);
-	circle28.setRadius(5);
-	//set X
-	circle1.setLayoutX(140);
-	circle2.setLayoutX(170);
-	circle3.setLayoutX(200);
-	circle4.setLayoutX(230);
-	circle5.setLayoutX(260);
-	circle6.setLayoutX(290);
-	circle7.setLayoutX(320);
-	circle8.setLayoutX(155);
-	circle9.setLayoutX(185);
-	circle10.setLayoutX(215);
-	circle11.setLayoutX(245);
-	circle12.setLayoutX(275);
-	circle13.setLayoutX(305);
-	circle14.setLayoutX(170);
-	circle15.setLayoutX(200);
-	circle16.setLayoutX(230);
-	circle17.setLayoutX(260);
-	circle18.setLayoutX(290);
-	circle19.setLayoutX(185);
-	circle20.setLayoutX(215);
-	circle21.setLayoutX(245);
-	circle22.setLayoutX(275);
-	circle23.setLayoutX(200);
-	circle24.setLayoutX(230);
-	circle25.setLayoutX(260);
-	circle26.setLayoutX(215);
-	circle27.setLayoutX(245);
-	circle28.setLayoutX(230);
-	//Set Y
-	circle1.setLayoutY(290);
-	circle2.setLayoutY(290);
-	circle3.setLayoutY(290);
-	circle4.setLayoutY(290);
-	circle5.setLayoutY(290);
-	circle6.setLayoutY(290);
-	circle7.setLayoutY(290);
-	circle8.setLayoutY(260);
-	circle9.setLayoutY(260);
-	circle10.setLayoutY(260);
-	circle11.setLayoutY(260);
-	circle12.setLayoutY(260);
-	circle13.setLayoutY(260);
-	circle14.setLayoutY(230);
-	circle15.setLayoutY(230);
-	circle16.setLayoutY(230);
-	circle17.setLayoutY(230);
-	circle18.setLayoutY(230);
-	circle19.setLayoutY(200);
-	circle20.setLayoutY(200);
-	circle21.setLayoutY(200);
-	circle22.setLayoutY(200);
-	circle23.setLayoutY(170);
-	circle24.setLayoutY(170);
-	circle25.setLayoutY(170);
-	circle26.setLayoutY(140);
-	circle27.setLayoutY(140);
-	circle28.setLayoutY(110);
+	Circle circle1 = new Circle(140.0,290.0,5.0);
+	Circle circle2 = new Circle(170.0,290.0,5.0);
+	Circle circle3 = new Circle(200.0,290.0,5.0);
+	Circle circle4 = new Circle(230.0,290.0,5.0);
+	Circle circle5 = new Circle(260.0,290.0,5.0);
+	Circle circle6 = new Circle(290.0,290.0,5.0);
+	Circle circle7 = new Circle(320.0,290.0,5.0);
+	Circle circle8 = new Circle(155.0,260.0,5.0);
+	Circle circle9 = new Circle(185.0,260.0,5.0);
+	Circle circle10 = new Circle(215.0,260.0,5.0);
+	Circle circle11 = new Circle(245.0,260.0,5.0);
+	Circle circle12 = new Circle(275.0,260.0,5.0);
+	Circle circle13 = new Circle(305.0,260.0,5.0);
+	Circle circle14 = new Circle(170.0,230.0,5.0);
+	Circle circle15 = new Circle(200.0,230.0,5.0);
+	Circle circle16 = new Circle(230.0,230.0,5.0);
+	Circle circle17 = new Circle(260.0,230.0,5.0);
+	Circle circle18 = new Circle(290.0,230.0,5.0);
+	Circle circle19 = new Circle(185.0,200.0,5.0);
+	Circle circle20 = new Circle(215.0,200.0,5.0);
+	Circle circle21 = new Circle(245.0,200.0,5.0);
+	Circle circle22 = new Circle(275.0,200.0,5.0);
+	Circle circle23 = new Circle(200.0,170.0,5.0);
+	Circle circle24 = new Circle(230.0,170.0,5.0);
+	Circle circle25 = new Circle(260.0,170.0,5.0);
+	Circle circle26 = new Circle(215.0,140.0,5.0);
+	Circle circle27 = new Circle(245.0,140.0,5.0);
+	Circle circle28 = new Circle(230.,110.0,5.0);
 	//put circles into pane
 	pane.getChildren().add(circle1);
 	pane.getChildren().add(circle2);
